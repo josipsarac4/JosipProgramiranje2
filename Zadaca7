@@ -1,0 +1,8 @@
+def obrni_string(tekst):
+    if len(tekst)==0:
+        return ""
+    else:
+        return obrni_string(tekst[1:])+tekst[0]
+unos=input("Unesi string: ")
+rezultat=obrni_string(unos)
+print("Obrnuti string:",rezultat)

@@ -1,0 +1,14 @@
+def parni_brojevi(n):
+    for i in range(2,n,2):
+        yield i
+def neparni_brojevi(n):
+    for i in range(1,n,2):
+        yield i
+n=int(input("Unesi broj: "))
+print("Parni brojevi manji od",n,":")
+for broj in parni_brojevi(n):
+    print(broj,end=" ")
+print()
+print("Neparni brojevi manji od",n,":")
+for broj in neparni_brojevi(n):
+    print(broj,end=" ")

@@ -1,0 +1,9 @@
+import re
+regex=r"^J.*[0-5].*\s.*S$"
+while True:
+    unos=input("Unesi svoje ime: ")
+    if re.search(regex,unos):
+        print("Ime je tocno!")
+        break
+    else:
+        print("Pokusaj ponovo!")

@@ -1,0 +1,15 @@
+import re
+email_regex=r"^[a-z]+\.[a-z]+@fpmoz\.sum\.ba$"
+eduid_regex=r"^[a-z]+\.[a-z]+\d*@sum\.ba$"
+mail=input("Unesi email: ")
+eduid=input("Unesi eduId: ")
+provjera_mail=re.search(email_regex,mail.lower())
+provjera_eduid=re.search(eduid_regex,eduid.lower())
+if provjera_mail:
+    print("Email je tocan!")
+else:
+    print("Email je netocan!")
+if provjera_eduid:
+    print("EduId je tocan!")
+else:
+    print("EduId je netocan!")
