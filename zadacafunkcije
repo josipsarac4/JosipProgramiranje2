@@ -1,0 +1,13 @@
+def  pozdrav(ime):
+    return "Pozdrav "+ime
+
+pozdravi=lambda ime: "Dobrodosao" +ime
+
+
+def pozovifunkciju(funkcija):
+    rezultat=funkcija("Josip")
+
+    print(rezultat)
+
+pozovifunkciju(pozdrav)
+pozovifunkciju(pozdravi)
